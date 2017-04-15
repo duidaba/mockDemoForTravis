@@ -7,7 +7,7 @@ public class AuthenticatorIntegrationTest extends AuthenticaterTest {
 
   private String getPuName(){
     if (System.getenv("TRAVIS")!= null) {
-      return "pu_travis";
+      return "pu_mySql_travis_Integration";
     }
     return "pu_localDB";
   }
