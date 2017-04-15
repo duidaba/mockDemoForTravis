@@ -22,7 +22,7 @@
       <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/test?zeroDateTimeBehavior=convertToNull"/>
       <property name="javax.persistence.jdbc.user" value="root"/>
       <property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
-      <property name="javax.persistence.jdbc.password" value="test"/>
+      <property name="javax.persistence.jdbc.password" value=""/>
       <property name="eclipselink.canonicalmodel.subpackage" value="travis"/>
        <property name="javax.persistence.sql-load-script-source" value="scripts/createUsers.sql"/>
       <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
