@@ -1,4 +1,6 @@
 target 
 /nbproject/
 
+node_modules
+
 derby.log
