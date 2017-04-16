@@ -37,9 +37,11 @@ public class UserFacadeFakeTest {
   @Test
   public void authenticateNonExistingUser(){
     //Given (in setup)
+
     //When
     LoginStatus res = facade.verifyUser("xxxx", "kfjdlsjaf");
-    //Then
+    
+//Then
     assertThat(res,is(LoginStatus.UNKNOWN_USER));
   }
 
