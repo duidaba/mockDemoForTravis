@@ -13,4 +13,4 @@ before_install:
 
 after_success:
   - mvn clean test jacoco:report coveralls:report
-  - surge --project .**/site --domain myxxx.surge.sh
+  - surge --project ./**/site --domain myxxx.surge.sh
