@@ -112,9 +112,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.12.1</version>
         <configuration>
-          <excludes>
+<!--          <excludes>
             <exclude>**/*IntegrationTest*</exclude>
-          </excludes>
+          </excludes>-->
         </configuration>
       </plugin>
       <plugin>
