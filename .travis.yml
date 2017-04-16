@@ -8,8 +8,8 @@ before_install:
   - mysql -e 'CREATE DATABASE usersDB;'
   
 ## Run Integration tests
-## script: "mvn verify"
-script: "mvn site"
+##script: "mvn verify"
+##script: "mvn site"
 
 after_success:
 mvn jacoco:report coveralls:jacoco
