@@ -8,4 +8,5 @@ before_install:
   - mysql -e 'CREATE DATABASE usersDB;'
   
 ## Run Integration tests
-script: "mvn verify"
+## script: "mvn verify"
+script: "mvn site"
