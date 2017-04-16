@@ -15,4 +15,3 @@ after_success:
   ##- mvn clean test jacoco:report coveralls:report
   ##- mvn site
   - surge --project ./target/site --domain myxxx.surge.sh
-  - surge --project ./**/site --domain myxxx.surge.sh
