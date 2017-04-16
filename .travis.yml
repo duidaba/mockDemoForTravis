@@ -19,9 +19,9 @@ before_install:
 ## script: "mvn verify"
 script: 
   #- mvn verify
-  - mvn site
+  ##- mvn site
 
 after_success:
   ##- mvn clean test jacoco:report coveralls:report
-  ##- mvn site
+  - mvn site
   - surge --project ./target/site --domain myxxx.surge.sh
