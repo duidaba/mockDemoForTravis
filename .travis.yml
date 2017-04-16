@@ -1,12 +1,16 @@
 language: java
 jdk: oraclejdk8
 
+language: node_js
+
 services:
   - mysql
   
-#cache:
-#  directories:
-#    - $HOME/.m2
+
+cache:
+  directories:
+    - node_modules
+    - $HOME/.m2
   
 before_install:
   - mysql -e 'CREATE DATABASE usersDB;'
