@@ -12,5 +12,6 @@ before_install:
 ## script: "mvn site"
 
 after_success:
-  - mvn clean test jacoco:report coveralls:report
-  - surge --project ./**/site --domain myxxx.surge.sh
+  ##- mvn clean test jacoco:report coveralls:report
+  - mvn site
+  - surge --project ./target/site --domain myxxx.surge.sh
