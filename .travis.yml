@@ -10,3 +10,6 @@ before_install:
 ## Run Integration tests
 ## script: "mvn verify"
 script: "mvn site"
+
+after_success:
+mvn jacoco:report coveralls:jacoco
