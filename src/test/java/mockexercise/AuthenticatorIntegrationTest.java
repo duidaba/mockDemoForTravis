@@ -5,7 +5,6 @@ import static org.mockito.Mockito.spy;
 
 /**
  * Test with either a local database, or MySQL on travis-CI if running here
- * @author plaul1
  */
 public class AuthenticatorIntegrationTest extends AuthenticaterTest {
 
