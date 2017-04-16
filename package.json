@@ -14,5 +14,8 @@
   "license": "ISC",
   "dependencies": {
     "surge": "^0.19.0"
+  },
+  "devDependencies": {
+    "surge": "^0.19.0"
   }
 }
