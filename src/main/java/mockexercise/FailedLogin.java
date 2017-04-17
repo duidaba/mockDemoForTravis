@@ -19,7 +19,7 @@ public class FailedLogin {
   }
 
   /**
-   * Increment then number of failed logins, if time since last failed login is < allowedTimeBetweenFailings
+   * Increment then number of failed logins, if time since last failed login is less than allowedTimeBetweenFailings
    * Otherwise  it resets failedLogins to 1
    * @param time Time in ms
    * @return number of failed logins 
