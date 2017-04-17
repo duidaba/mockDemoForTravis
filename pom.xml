@@ -6,7 +6,6 @@
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   
-  
   <dependencies>
     <dependency>
       <groupId>mysql</groupId>
@@ -50,7 +49,12 @@
     </dependency>
   </dependencies>
   
+  
+      
   <reporting>
+    
+   
+   
     <plugins>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -76,7 +80,6 @@
           </reportSet>
         </reportSets>
       </plugin>
-        
        
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -95,9 +98,21 @@
   </reporting>
   
   <build>
+    <resources>
+    <resource>
+      <directory>${project.basedir}</directory>
+      <includes>
+        <include>.surgeignore</include>
+      </includes>
+    </resource>
+    <resource>
+      <directory>site</directory>
+    </resource>
+  </resources>
+    
     <plugins>
       
-<!--      <plugin>
+      <!--      <plugin>
         <groupId>org.eluder.coveralls</groupId>
         <artifactId>coveralls-maven-plugin</artifactId>
         <version>4.3.0</version>
@@ -110,6 +125,7 @@
         <groupId>org.jacoco</groupId>
         <artifactId>jacoco-maven-plugin</artifactId>
         <version>0.7.6.201602180812</version>
+        
         <executions>
           <execution>
             <id>prepare-agent</id>
